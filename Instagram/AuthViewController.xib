@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A379b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController">
+            <connections>
+                <outlet property="navigationBar" destination="k76-sx-bGd" id="ULh-Yg-nsI"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cF8-M8-fM8"/>
+                <outlet property="webView" destination="POW-zn-jRV" id="6zf-JN-GYA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POW-zn-jRV">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k76-sx-bGd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <items>
+                        <navigationItem title="Title" id="1Wv-hD-XyK"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="POW-zn-jRV" firstAttribute="top" secondItem="k76-sx-bGd" secondAttribute="bottom" id="9Or-pc-pEI"/>
+                <constraint firstAttribute="trailing" secondItem="k76-sx-bGd" secondAttribute="trailing" id="9yM-3h-XNM"/>
+                <constraint firstItem="POW-zn-jRV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="A9w-eC-0tH"/>
+                <constraint firstAttribute="bottom" secondItem="POW-zn-jRV" secondAttribute="bottom" id="ANa-XU-unV"/>
+                <constraint firstItem="k76-sx-bGd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EnM-Hq-cF4"/>
+                <constraint firstItem="POW-zn-jRV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LeG-HM-JNu"/>
+                <constraint firstItem="k76-sx-bGd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oCi-AW-dgY"/>
+                <constraint firstAttribute="trailing" secondItem="POW-zn-jRV" secondAttribute="trailing" id="smX-Ad-Cei"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="LeG-HM-JNu"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
