@@ -184,6 +184,7 @@
 
 - (void)changeUserTo: (NSString *)login
 {
+    login = [login lowercaseString];
     if (![login isEqualToString:self.currentLogin]) {
         [self.data removeAllObjects];
         [self.tableView reloadData];
